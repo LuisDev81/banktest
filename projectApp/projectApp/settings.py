@@ -73,14 +73,36 @@ WSGI_APPLICATION = 'projectApp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bankTest',
+        'USER': 'root',
+        'PASSWORD': 'Ale11Vicky28',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
+    }
+}
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd9r0ih9vui6irt',
+        'USER': 'ujksh1dvn1v8u',
+        'PASSWORD': 'pdd69056f558ac2787056a204607a1133c34fc06fd16aed3f8f51ff1131c29b57',
+        'HOST': 'c7gljno857ucsl.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+        'PORT': '5432'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
